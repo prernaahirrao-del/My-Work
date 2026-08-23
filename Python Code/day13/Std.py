@@ -1,0 +1,14 @@
+import csv
+
+std = [
+    ["ID" , "Name" , "GPA"],
+    ["101" , "Prerna" , "3.8"],
+    ["ID" , "Sagar" , "3.2"],
+    ["ID" , "Amit" , "3.4"],
+    ["ID" , "Roshani" , "2.9"],
+    ["ID" , "Diana" , "2.4"],
+]
+
+with open("STD.csv" , "w")as file:
+    writer = csv.writer(file)
+    writer.writerows(std)
